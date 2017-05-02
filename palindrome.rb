@@ -1,3 +1,8 @@
+=begin
+    Daniel Santos
+    Super easy program to say if a set of words are palindromes
+=end 
+
 def is_palindrome(*args)
   args.each do |word|
     if word != word.reverse
@@ -10,8 +15,8 @@ end
 
 result = is_palindrome("lol", "mariiram", "jjjeeejjj")
 
-if result
-    puts "YES"
-else 
+unless result
     puts "NO"
+else 
+    puts "YES"
 end
